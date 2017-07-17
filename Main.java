@@ -115,7 +115,7 @@ public class Main{
 		HttpClient client = HttpClients.createDefault();
 		HttpPost post = new HttpPost("https://api.cognitive.microsoft.com/sts/v1.0/issueToken");
 		try {
-			post.setHeader("Ocp-Apim-Subscription-Key", "772d1caee8aa4b48a052c1c685089767");
+			post.setHeader("Ocp-Apim-Subscription-Key", "XXXXXXXXXXXXXXXXXXXX");
 			HttpResponse response = client.execute(post);
 			BufferedReader rd = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));
 			line = rd.readLine();
